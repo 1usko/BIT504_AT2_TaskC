@@ -10,13 +10,13 @@ public class Sprite {
 	private Color colour;
 	
 	 // Getter methods
-	 public int getxPosition() {return xPosition;}
-	 public int getyPosition() {return yPosition;}
-	 public int getxVelocity() {return xVelocity;}
-	 public int getyVelocity() {return yVelocity;}
+	 public int getXPosition() {return xPosition;}
+	 public int getYPosition() {return yPosition;}
+	 public int getXVelocity() {return xVelocity;}
+	 public int getYVelocity() {return yVelocity;}
 	 public int getWidth() {return width;}
 	 public int getHeight() {return height;}
-	 public Color getColor() {return colour;}
+	 public Color getColour() {return colour;}
 	 
 	 // Setter methods
 	 public void setInitialPosition(int initialX, int initialY) {
@@ -24,19 +24,19 @@ public class Sprite {
 		 	initialYPosition = initialY;
 	 	}
 	 public void resetToInitialPosition() {
-		 	setxPosition(initialXPosition);
-		 	setyPosition(initialYPosition);
+		 	setXPosition(initialXPosition);
+		 	setYPosition(initialYPosition);
 	 	}
-	 public void setxPosition(int xPosition) {
+	 public void setXPosition(int xPosition) {
 	         this.xPosition = xPosition;
 	     }
-	 public void setyPosition(int yPosition) {
+	 public void setYPosition(int yPosition) {
 	         this.yPosition = yPosition;
 	     }
-	 public void setxVelocity(int xVelocity) {
+	 public void setXVelocity(int xVelocity) {
 	         this.xVelocity = xVelocity;
 	     }
-	 public void setyVelocity(int yVelocity) {
+	 public void setYVelocity(int yVelocity) {
 	         this.yVelocity = yVelocity;
 	     }
 	 public void setWidth(int width) {
@@ -76,6 +76,6 @@ public class Sprite {
 	 }
 	 
 	 public Rectangle getRectangle() {
-         return new Rectangle(getxPosition(), getyPosition(), getWidth(), getHeight());
+         return new Rectangle(getXPosition(), getYPosition(), getWidth(), getHeight());
      }
 }
